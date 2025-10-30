@@ -45,17 +45,6 @@ A ideia é que qualquer loja possa exibir banners dinâmicos apenas **importando
 *   **Deploy na Vercel (conta gratuita)**
     
 
-🖥️ Estrutura esperada
-----------------------
-
-.
-├── app/ ou pages/          # Rotas e views (Next.js)
-├── pages/api/banners.js    # API dos banners
-├── public/magic-banner.js  # Script embutível
-├── /lib ou /db             # Persistência ou conexão
-└── README.md               # Documentação
-
-
 🧩 Como testar o script embutível
 ---------------------------------
 
