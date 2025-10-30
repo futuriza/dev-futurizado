@@ -47,6 +47,7 @@ Deploy na Vercel (conta gratuita)
 ├── /lib ou /db             # Persistência ou conexão
 └── README.md               # Documentação
 
+
 ⚙️ Como rodar o projeto localmente
 # 1. Clone este repositório
 git clone https://github.com/<seu-usuario>/magic-banner-futuriza.git
