@@ -48,14 +48,13 @@ A ideia é que qualquer loja possa exibir banners dinâmicos apenas **importando
 🖥️ Estrutura esperada
 ----------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── app/ ou pages/          # Rotas e views (Next.js)  ├── pages/api/banners.js    # API dos banners  ├── public/magic-banner.js  # Script embutível  ├── /lib ou /db             # Persistência ou conexão  └── README.md               # Documentação   `
+.
+├── app/ ou pages/          # Rotas e views (Next.js)
+├── pages/api/banners.js    # API dos banners
+├── public/magic-banner.js  # Script embutível
+├── /lib ou /db             # Persistência ou conexão
+└── README.md               # Documentação
 
-⚙️ Como rodar o projeto localmente
-----------------------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   # 1. Clone este repositório  git clone https://github.com//magic-banner-futuriza.git  # 2. Acesse a pasta  cd magic-banner-futuriza  # 3. Instale as dependências  npm install  # 4. Rode o servidor de desenvolvimento  npm run dev   `
-
-> O projeto estará disponível em: http://localhost:3000
 
 🧩 Como testar o script embutível
 ---------------------------------
@@ -64,13 +63,12 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
     
 2.  Em qualquer página HTML, adicione a tag abaixo:
     
+<script src="https://<seu-projeto>.vercel.app/magic-banner.js"></script>
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`  `
 
 1.  Ao carregar a página, o script fará uma requisição para:
     
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   https://.vercel.app/api/banners?url=   `
+[  https://.vercel.app/api/banners?url=   `](https://<seu-projeto>.vercel.app/api/banners?url=<url_atual>)
 
 Se houver um banner cadastrado para aquela URL, ele será exibido automaticamente no topo do site.
 
